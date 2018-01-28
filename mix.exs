@@ -25,8 +25,8 @@ defmodule PlayfabEx.Mixfile do
   defp deps do
     [
       {:ex_doc, ">= 0.0.0", only: :dev},
+      {:floki, "~> 0.0.0", only: :dev},
       {:dynamic_interfaces, "~> 0.2.0"},
-      {:floki, "~> 0.0.0"},
       {:tesla, "~> 0.0"},
       {:poison, "~> 3.0"}
     ]
