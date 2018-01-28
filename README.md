@@ -1,6 +1,27 @@
 # PlayfabEx
 
-**TODO: Add description**
+Allows developers to interact with the playfab api.
+
+Just need to set up a couple configuration variables.
+
+```
+config :playfab_ex, :title_id, YourPlayfabTitleId
+config :playfab_ex, :secret_key, YourPlayfabSecretKey
+```
+
+You are free to override the default implementations via
+
+```
+config :playfab_ex, PlayfabEx.Server.AccountManagement, MyApp.MyAccountManagementOverride
+```
+
+or you can override at runtime:
+
+```
+Application.put_env(:playfab_ex, PlayfabEx.Server.AccountManagement, MyApp.MyAccountManagementOverride)
+```
+
+Feedback welcome.
 
 ## Installation
 
