@@ -4,7 +4,7 @@ defmodule PlayfabEx.Admin.ServerSideCloudScript do
   @doc """
   Gets the contents and information of a specific Cloud Script revision.
 
-  @link https://api.playfab.com/documentation/admin/method/GetCloudScriptRevision
+  [online docs](https://api.playfab.com/documentation/admin/method/GetCloudScriptRevision)
   """
   @spec get_cloud_script_revision(map()) :: {:ok, map} | {:error, String.t}
   definterface get_cloud_script_revision(params), to: (Application.get_env(:playfab_ex, PlayfabEx.Admin.ServerSideCloudScript) || PlayfabEx.Admin.Default.ServerSideCloudScript)
@@ -13,7 +13,7 @@ defmodule PlayfabEx.Admin.ServerSideCloudScript do
   @doc """
   Lists all the current cloud script versions. For each version, information about the current published and latest revisions is also listed.
 
-  @link https://api.playfab.com/documentation/admin/method/GetCloudScriptVersions
+  [online docs](https://api.playfab.com/documentation/admin/method/GetCloudScriptVersions)
   """
   @spec get_cloud_script_versions(map()) :: {:ok, map} | {:error, String.t}
   definterface get_cloud_script_versions(params), to: (Application.get_env(:playfab_ex, PlayfabEx.Admin.ServerSideCloudScript) || PlayfabEx.Admin.Default.ServerSideCloudScript)
@@ -22,7 +22,7 @@ defmodule PlayfabEx.Admin.ServerSideCloudScript do
   @doc """
   Sets the currently published revision of a title Cloud Script
 
-  @link https://api.playfab.com/documentation/admin/method/SetPublishedRevision
+  [online docs](https://api.playfab.com/documentation/admin/method/SetPublishedRevision)
   """
   @spec set_published_revision(map()) :: {:ok, map} | {:error, String.t}
   definterface set_published_revision(params), to: (Application.get_env(:playfab_ex, PlayfabEx.Admin.ServerSideCloudScript) || PlayfabEx.Admin.Default.ServerSideCloudScript)
@@ -31,7 +31,7 @@ defmodule PlayfabEx.Admin.ServerSideCloudScript do
   @doc """
   Creates a new Cloud Script revision and uploads source code to it. Note that at this time, only one file should be submitted in the revision.
 
-  @link https://api.playfab.com/documentation/admin/method/UpdateCloudScript
+  [online docs](https://api.playfab.com/documentation/admin/method/UpdateCloudScript)
   """
   @spec update_cloud_script(map()) :: {:ok, map} | {:error, String.t}
   definterface update_cloud_script(params), to: (Application.get_env(:playfab_ex, PlayfabEx.Admin.ServerSideCloudScript) || PlayfabEx.Admin.Default.ServerSideCloudScript)

@@ -4,7 +4,7 @@ defmodule PlayfabEx.Server.FriendListManagement do
   @doc """
   Adds the Friend user to the friendlist of the user with PlayFabId. At least one of FriendPlayFabId,FriendUsername,FriendEmail, or FriendTitleDisplayName should be initialized.
 
-  @link https://api.playfab.com/documentation/server/method/AddFriend
+  [online docs](https://api.playfab.com/documentation/server/method/AddFriend)
   """
   @spec add_friend(map()) :: {:ok, map} | {:error, String.t}
   definterface add_friend(params), to: (Application.get_env(:playfab_ex, PlayfabEx.Server.FriendListManagement) || PlayfabEx.Server.Default.FriendListManagement)
@@ -13,7 +13,7 @@ defmodule PlayfabEx.Server.FriendListManagement do
   @doc """
   Retrieves the current friends for the user with PlayFabId, constrained to users who have PlayFab accounts. Friends from linked accounts (Facebook, Steam) are also included. You may optionally exclude some linked services' friends.
 
-  @link https://api.playfab.com/documentation/server/method/GetFriendsList
+  [online docs](https://api.playfab.com/documentation/server/method/GetFriendsList)
   """
   @spec get_friends_list(map()) :: {:ok, map} | {:error, String.t}
   definterface get_friends_list(params), to: (Application.get_env(:playfab_ex, PlayfabEx.Server.FriendListManagement) || PlayfabEx.Server.Default.FriendListManagement)
@@ -22,7 +22,7 @@ defmodule PlayfabEx.Server.FriendListManagement do
   @doc """
   Removes the specified friend from the the user's friend list
 
-  @link https://api.playfab.com/documentation/server/method/RemoveFriend
+  [online docs](https://api.playfab.com/documentation/server/method/RemoveFriend)
   """
   @spec remove_friend(map()) :: {:ok, map} | {:error, String.t}
   definterface remove_friend(params), to: (Application.get_env(:playfab_ex, PlayfabEx.Server.FriendListManagement) || PlayfabEx.Server.Default.FriendListManagement)
@@ -31,7 +31,7 @@ defmodule PlayfabEx.Server.FriendListManagement do
   @doc """
   Updates the tag list for a specified user in the friend list of another user
 
-  @link https://api.playfab.com/documentation/server/method/SetFriendTags
+  [online docs](https://api.playfab.com/documentation/server/method/SetFriendTags)
   """
   @spec set_friend_tags(map()) :: {:ok, map} | {:error, String.t}
   definterface set_friend_tags(params), to: (Application.get_env(:playfab_ex, PlayfabEx.Server.FriendListManagement) || PlayfabEx.Server.Default.FriendListManagement)

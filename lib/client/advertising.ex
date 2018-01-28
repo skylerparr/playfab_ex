@@ -4,7 +4,7 @@ defmodule PlayfabEx.Client.Advertising do
   @doc """
   Attributes an install for advertisment.
 
-  @link https://api.playfab.com/documentation/client/method/AttributeInstall
+  [online docs](https://api.playfab.com/documentation/client/method/AttributeInstall)
   """
   @spec attribute_install(map()) :: {:ok, map} | {:error, String.t}
   definterface attribute_install(params), to: (Application.get_env(:playfab_ex, PlayfabEx.Client.Advertising) || PlayfabEx.Client.Default.Advertising)

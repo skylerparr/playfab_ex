@@ -115,7 +115,7 @@ defmodule Mix.Tasks.GenApi do
   @doc """
   #{docs}
 
-  @link https://api.playfab.com#{link}
+  [online docs](https://api.playfab.com#{link}\)
   """
   @spec #{function_name}(map(\)\) :: {:ok, map} | {:error, String.t}
   definterface #{function_name}(params\), to: (Application.get_env(:playfab_ex, #{delegate_module}\) || #{current_module}\)
