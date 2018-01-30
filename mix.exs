@@ -4,7 +4,7 @@ defmodule PlayfabEx.Mixfile do
   def project do
     [
       app: :playfab_ex,
-      version: "0.2.0",
+      version: "0.2.2",
       elixir: "~> 1.5",
       start_permanent: Mix.env == :prod,
       description: description(),
@@ -16,7 +16,7 @@ defmodule PlayfabEx.Mixfile do
   # Run "mix help compile.app" to learn about applications.
   def application do
     [
-      applications: [:floki, :tesla, :poison, :dynamic_interfaces],
+      applications: [:tesla, :poison, :dynamic_interfaces],
       extra_applications: [:logger]
     ]
   end
